@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should create fetch config close error modal request 1`] = `
+Object {
+  "type": "FETCH_CONFIG_CLOSE_ERROR_MODAL_REQUEST",
+}
+`;
+
+exports[`should create fetch config failure 1`] = `
+Object {
+  "type": "FETCH_CONFIG_FAILURE",
+}
+`;
+
+exports[`should create fetch config request 1`] = `
+Object {
+  "type": "FETCH_CONFIG_REQUEST",
+}
+`;
+
+exports[`should create fetch config success 1`] = `
+Object {
+  "data": Object {
+    "accountsUrl": "dummyAccountsUrl",
+  },
+  "type": "FETCH_CONFIG_SUCCESS",
+}
+`;

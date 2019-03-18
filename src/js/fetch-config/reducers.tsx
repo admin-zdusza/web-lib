@@ -15,7 +15,9 @@ const initialState = {
   showModal: false,
 };
 
-const fetchConfigReducer = <T extends {}>(state: FetchConfigState<T> = initialState, action: FetchConfigAction<T>): FetchConfigState<T> => {
+export const fetchConfigReducer = <T extends {}>(
+  state: FetchConfigState<T> = initialState,
+  action: FetchConfigAction<T>): FetchConfigState<T> => {
   switch (action.type) {
     case FETCH_CONFIG.REQUEST:
       return {...state, isLoading: true, data: null, failed: false, showModal: false};
@@ -29,5 +31,3 @@ const fetchConfigReducer = <T extends {}>(state: FetchConfigState<T> = initialSt
       return state;
   }
 };
-
-export default fetchConfigReducer;

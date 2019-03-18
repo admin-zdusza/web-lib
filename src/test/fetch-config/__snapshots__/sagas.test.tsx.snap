@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should fail 1`] = `
+Array [
+  Object {
+    "type": "FETCH_CONFIG_FAILURE",
+  },
+]
+`;
+
+exports[`should fail to parse response 1`] = `
+Array [
+  Object {
+    "type": "FETCH_CONFIG_FAILURE",
+  },
+]
+`;
+
+exports[`should run with success 1`] = `
+Array [
+  Object {
+    "data": Object {},
+    "type": "FETCH_CONFIG_SUCCESS",
+  },
+]
+`;
+
+exports[`should take latest 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "FETCH_CONFIG_REQUEST",
+      [Function],
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "FORK",
+}
+`;
+
+exports[`should take latest 2`] = `true`;

@@ -1,23 +1,9 @@
-/**
- * @class ExampleComponent
- */
-
-import * as React from 'react'
-
-import styles from './styles.css'
-
-export type Props = { text: string }
-
-export default class ExampleComponent extends React.Component<Props> {
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
-}
+export {FETCH_CONFIG} from './js/fetch-config/types';
+export {
+  fetchConfigRequest,
+  fetchConfigSuccess,
+  fetchConfigFailure,
+  fetchConfigCloseErrorModalRequest
+}from './js/fetch-config/actions-creators';
+export {fetchConfigReducer} from './js/fetch-config/reducers';
+export {FetchConfigState} from './js/fetch-config/reducers';
