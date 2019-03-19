@@ -17,8 +17,6 @@ export function* fetchConfig(): any {
     }
 }
 
-function* fetchConfigSaga() {
+export function* fetchConfigSaga() {
     yield takeLatest(FETCH_CONFIG.REQUEST, fetchConfig);
 }
-
-export default fetchConfigSaga;

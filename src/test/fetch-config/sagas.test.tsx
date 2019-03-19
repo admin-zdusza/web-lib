@@ -1,4 +1,4 @@
-import fetchConfigSaga, {fetchConfig} from '../../js/fetch-config/sagas';
+import {fetchConfigSaga, fetchConfig} from '../../js/fetch-config/sagas';
 import nock from 'nock';
 import {runSaga} from 'redux-saga';
 
