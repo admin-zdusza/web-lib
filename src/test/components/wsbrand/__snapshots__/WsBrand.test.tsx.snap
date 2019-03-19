@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<h2>
+  Tester
+  <small
+    className="d-none d-md-inline greyed-small"
+  >
+     - z duszą!
+  </small>
+</h2>
+`;
