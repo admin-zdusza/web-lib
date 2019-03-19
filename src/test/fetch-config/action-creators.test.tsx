@@ -3,7 +3,7 @@ import {
     fetchConfigSuccess,
     fetchConfigFailure,
     fetchConfigCloseErrorModalRequest
-} from "../../js/fetch-config/actions-creators";
+} from '../../js/fetch-config/actions-creators';
 
 it('should create fetch config request', () => {
     expect(fetchConfigRequest()).toMatchSnapshot();

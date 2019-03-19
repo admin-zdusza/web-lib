@@ -1,5 +1,5 @@
-import {fetchConfigReducer} from "../../js/fetch-config/reducers";
-import {FETCH_CONFIG} from "../../js/fetch-config/types";
+import {fetchConfigReducer} from '../../js/fetch-config/reducers';
+import {FETCH_CONFIG} from '../../js/fetch-config/types';
 
 it('should reduce fetch config request', () => {
     expect(fetchConfigReducer(undefined, {type: FETCH_CONFIG.REQUEST})).toMatchSnapshot();
