@@ -1,12 +1,4 @@
-import {FetchConfigAction} from './actions-creators';
-import {FETCH_CONFIG} from './types';
-
-export interface FetchConfigState<T> {
-  isLoading: boolean;
-  data: T | null;
-  failed: boolean;
-  showModal: boolean;
-}
+import {FetchConfigAction, FetchConfigState, FETCH_CONFIG} from './types';
 
 const initialState = {
   isLoading: false,

@@ -26,3 +26,48 @@ Object {
   "type": "FETCH_CONFIG_SUCCESS",
 }
 `;
+
+exports[`should fail on 400 1`] = `
+Array [
+  Object {
+    "type": "FETCH_CONFIG_REQUEST",
+  },
+  Object {
+    "type": "FETCH_CONFIG_FAILURE",
+  },
+]
+`;
+
+exports[`should fail on 500 1`] = `
+Array [
+  Object {
+    "type": "FETCH_CONFIG_REQUEST",
+  },
+  Object {
+    "type": "FETCH_CONFIG_FAILURE",
+  },
+]
+`;
+
+exports[`should fail to parse response 1`] = `
+Array [
+  Object {
+    "type": "FETCH_CONFIG_REQUEST",
+  },
+  Object {
+    "type": "FETCH_CONFIG_FAILURE",
+  },
+]
+`;
+
+exports[`should run with success 1`] = `
+Array [
+  Object {
+    "type": "FETCH_CONFIG_REQUEST",
+  },
+  Object {
+    "data": Object {},
+    "type": "FETCH_CONFIG_SUCCESS",
+  },
+]
+`;

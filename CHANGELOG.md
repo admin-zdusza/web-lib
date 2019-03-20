@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.0] - 2019-03-20
+### Removed
+- redux-saga
+### Added
+- redux-thunk
+
 ## [1.1.1] - 2019-03-19
 ### Fixed
 - Styling

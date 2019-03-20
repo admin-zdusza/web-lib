@@ -4,3 +4,16 @@ export enum FETCH_CONFIG {
     FAILURE = 'FETCH_CONFIG_FAILURE',
     CLOSE_ERROR_MODAL_REQUEST = 'FETCH_CONFIG_CLOSE_ERROR_MODAL_REQUEST',
 }
+
+export interface FetchConfigState<T> {
+    isLoading: boolean;
+    data: T | null;
+    failed: boolean;
+    showModal: boolean;
+}
+
+export type FetchConfigAction<T> =
+    | { type: FETCH_CONFIG.REQUEST; }
+    | { type: FETCH_CONFIG.SUCCESS; data: T }
+    | { type: FETCH_CONFIG.FAILURE }
+    | { type: FETCH_CONFIG.CLOSE_ERROR_MODAL_REQUEST };
