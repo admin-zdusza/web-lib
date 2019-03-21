@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render closeable 1`] = `
+<UNDEFINED
+  onHide={[Function]}
+  show={true}
+>
+  <UNDEFINED
+    closeButton={true}
+  >
+    <UNDEFINED
+      className="text-danger"
+    >
+      Nastąpił nieoczekiwany błąd.
+    </UNDEFINED>
+  </UNDEFINED>
+  <UNDEFINED
+    className="text-danger"
+  >
+    <p>
+      Proszę sprawdź połączenie z internetem i spróbuj ponownie.
+    </p>
+  </UNDEFINED>
+  <UNDEFINED>
+    <UNDEFINED
+      onClick={[Function]}
+      variant="secondary"
+    >
+      Ok
+    </UNDEFINED>
+  </UNDEFINED>
+</UNDEFINED>
+`;
+
+exports[`should render not closeable 1`] = `
+<UNDEFINED
+  onHide={[Function]}
+  show={true}
+>
+  <UNDEFINED
+    closeButton={false}
+  >
+    <UNDEFINED
+      className="text-danger"
+    >
+      Nastąpił nieoczekiwany błąd.
+    </UNDEFINED>
+  </UNDEFINED>
+  <UNDEFINED
+    className="text-danger"
+  >
+    <p>
+      Proszę sprawdź połączenie z internetem i spróbuj ponownie.
+    </p>
+  </UNDEFINED>
+</UNDEFINED>
+`;

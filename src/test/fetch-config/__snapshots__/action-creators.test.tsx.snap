@@ -1,11 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should create fetch config close error modal request 1`] = `
-Object {
-  "type": "FETCH_CONFIG_CLOSE_ERROR_MODAL_REQUEST",
-}
-`;
-
 exports[`should create fetch config failure 1`] = `
 Object {
   "type": "FETCH_CONFIG_FAILURE",
@@ -35,6 +29,9 @@ Array [
   Object {
     "type": "FETCH_CONFIG_FAILURE",
   },
+  Object {
+    "type": "UNEXPECTED_ERROR_OCCURED",
+  },
 ]
 `;
 
@@ -46,6 +43,9 @@ Array [
   Object {
     "type": "FETCH_CONFIG_FAILURE",
   },
+  Object {
+    "type": "UNEXPECTED_ERROR_OCCURED",
+  },
 ]
 `;
 
@@ -56,6 +56,9 @@ Array [
   },
   Object {
     "type": "FETCH_CONFIG_FAILURE",
+  },
+  Object {
+    "type": "UNEXPECTED_ERROR_OCCURED",
   },
 ]
 `;
