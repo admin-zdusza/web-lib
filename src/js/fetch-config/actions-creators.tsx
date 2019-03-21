@@ -1,19 +1,20 @@
 import {FETCH_CONFIG} from './types';
 
-const fetchConfig = () => async (dispatch: Function) => {
-    try {
-        dispatch({type: 'FETCH_CONFIG_REQUEST'});
-        const response = await fetch('/page/initialdata');
-        if (response.status === 200) {
-            const data = await response.json();
-            dispatch(fetchConfigSuccess(data));
-        } else {
+const fetchConfig = () => (dispatch: Function) => {
+    dispatch(fetchConfigRequest());
+    return fetch('/page/initialdata')
+        .then(response => {
+            if (response.status === 200) {
+                return response.json().then(data => dispatch(fetchConfigSuccess(data)));
+            } else {
+                dispatch(fetchConfigFailure());
+                return;
+            }
+        })
+        .catch(e => {
+            console.error(e);
             dispatch(fetchConfigFailure());
-        }
-    } catch (e) {
-        console.error(e);
-        dispatch(fetchConfigFailure());
-    }
+        })
 };
 
 const fetchConfigRequest = () => ({type: FETCH_CONFIG.REQUEST});
