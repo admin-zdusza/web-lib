@@ -18,12 +18,6 @@ it('should reduce fetch config failure', () => {
     })).toMatchSnapshot();
 });
 
-it('should reduce fetch config close error modal request', () => {
-    expect(fetchConfigReducer(undefined, {
-        type: FETCH_CONFIG.CLOSE_ERROR_MODAL_REQUEST,
-    })).toMatchSnapshot();
-});
-
 it('should reduce to default', () => {
     // @ts-ignore
     expect(fetchConfigReducer({}, {type: undefined})).toMatchSnapshot();

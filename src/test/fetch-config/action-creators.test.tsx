@@ -2,8 +2,7 @@ import {
     fetchConfig,
     fetchConfigRequest,
     fetchConfigSuccess,
-    fetchConfigFailure,
-    fetchConfigCloseErrorModalRequest
+    fetchConfigFailure
 } from '../../js/fetch-config/actions-creators';
 import nock from 'nock';
 import {FetchConfigAction} from '../../js/fetch-config/types';
@@ -72,8 +71,4 @@ it('should create fetch config success', () => {
 
 it('should create fetch config failure', () => {
     expect(fetchConfigFailure()).toMatchSnapshot();
-});
-
-it('should create fetch config close error modal request', () => {
-    expect(fetchConfigCloseErrorModalRequest()).toMatchSnapshot();
 });
