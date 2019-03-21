@@ -23,54 +23,76 @@ Object {
 
 exports[`should fail on 400 1`] = `
 Array [
-  Object {
-    "type": "FETCH_CONFIG_REQUEST",
-  },
-  Object {
-    "type": "FETCH_CONFIG_FAILURE",
-  },
-  Object {
-    "type": "UNEXPECTED_ERROR_OCCURED",
-  },
+  Array [
+    Object {
+      "type": "FETCH_CONFIG_REQUEST",
+    },
+  ],
+  Array [
+    Object {
+      "type": "FETCH_CONFIG_FAILURE",
+    },
+  ],
+  Array [
+    Object {
+      "type": "UNEXPECTED_ERROR_OCCURED",
+    },
+  ],
 ]
 `;
 
 exports[`should fail on 500 1`] = `
 Array [
-  Object {
-    "type": "FETCH_CONFIG_REQUEST",
-  },
-  Object {
-    "type": "FETCH_CONFIG_FAILURE",
-  },
-  Object {
-    "type": "UNEXPECTED_ERROR_OCCURED",
-  },
+  Array [
+    Object {
+      "type": "FETCH_CONFIG_REQUEST",
+    },
+  ],
+  Array [
+    Object {
+      "type": "FETCH_CONFIG_FAILURE",
+    },
+  ],
+  Array [
+    Object {
+      "type": "UNEXPECTED_ERROR_OCCURED",
+    },
+  ],
 ]
 `;
 
 exports[`should fail to parse response 1`] = `
 Array [
-  Object {
-    "type": "FETCH_CONFIG_REQUEST",
-  },
-  Object {
-    "type": "FETCH_CONFIG_FAILURE",
-  },
-  Object {
-    "type": "UNEXPECTED_ERROR_OCCURED",
-  },
+  Array [
+    Object {
+      "type": "FETCH_CONFIG_REQUEST",
+    },
+  ],
+  Array [
+    Object {
+      "type": "FETCH_CONFIG_FAILURE",
+    },
+  ],
+  Array [
+    Object {
+      "type": "UNEXPECTED_ERROR_OCCURED",
+    },
+  ],
 ]
 `;
 
 exports[`should run with success 1`] = `
 Array [
-  Object {
-    "type": "FETCH_CONFIG_REQUEST",
-  },
-  Object {
-    "data": Object {},
-    "type": "FETCH_CONFIG_SUCCESS",
-  },
+  Array [
+    Object {
+      "type": "FETCH_CONFIG_REQUEST",
+    },
+  ],
+  Array [
+    Object {
+      "data": Object {},
+      "type": "FETCH_CONFIG_SUCCESS",
+    },
+  ],
 ]
 `;
