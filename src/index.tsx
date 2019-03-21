@@ -12,4 +12,3 @@ export {
 }from './js/components/ws-unexpected-error/actions-creators';
 export {unexpectedErrorReducer} from './js/components/ws-unexpected-error/reducers';
 export {WsUnexpectedError} from './js/components/ws-unexpected-error/WsUnexpectedError';
-export {WsSiteLoader} from './js/components/ws-site-loader/WsSiteLoader';

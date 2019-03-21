@@ -2,6 +2,22 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.1.4] - 2019-03-21
+### Removed
+- Site loader
+
+## [3.1.3] - 2019-03-21
+### Fixed
+- Site loader
+
+## [3.1.2] - 2019-03-21
+### Fixed
+- Site loader
+
+## [3.1.1] - 2019-03-21
+### Fixed
+- Site loader
+
 ## [3.1.0] - 2019-03-21
 ### Added
 - Site loader
