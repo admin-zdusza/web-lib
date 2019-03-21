@@ -11,5 +11,5 @@ it('should reduce unexpected error acknowledged', () => {
 
 it('should reduce to default', () => {
     // @ts-ignore
-    expect(unexpectedErrorReducer({}, {type: undefined})).toMatchSnapshot();
+    expect(unexpectedErrorReducer(false, {type: undefined})).toMatchSnapshot();
 });
