@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.2.11] - 2019-07-22
+### Fixed
+- Handling fetch config
+
 ## [3.2.10] - 2019-07-22
 ### Fixed
 - Bring back null in react components
