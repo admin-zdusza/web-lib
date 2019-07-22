@@ -1,6 +1,6 @@
 export interface FetchConfigState<T> {
     isLoading: boolean;
-    data: T | null;
+    data: T | undefined;
 }
 
 export enum FETCH_CONFIG {

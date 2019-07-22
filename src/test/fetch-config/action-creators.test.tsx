@@ -16,7 +16,7 @@ it('should run with success', async () => {
         .get('/page/initialdata')
         .reply(200, {});
     const dispatch = jest.fn();
-    await fetchConfig()(dispatch);
+    await fetchConfig(() => {})(dispatch);
     expect(dispatch.mock.calls).toMatchSnapshot();
 });
 
@@ -25,7 +25,7 @@ it('should fail to parse response', async () => {
         .get('/page/initialdata')
         .reply(200, 'test');
     const dispatch = jest.fn();
-    await fetchConfig()(dispatch);
+    await fetchConfig(() => {})(dispatch);
     expect(dispatch.mock.calls).toMatchSnapshot();
 });
 
@@ -34,7 +34,7 @@ it('should fail on 400', async () => {
         .get('/page/initialdata')
         .reply(400);
     const dispatch = jest.fn();
-    await fetchConfig()(dispatch);
+    await fetchConfig(() => {})(dispatch);
     expect(dispatch.mock.calls).toMatchSnapshot();
 });
 
@@ -43,7 +43,7 @@ it('should fail on 500', async () => {
         .get('/page/initialdata')
         .reply(500);
     const dispatch = jest.fn();
-    await fetchConfig()(dispatch);
+    await fetchConfig(() => {})(dispatch);
     expect(dispatch.mock.calls).toMatchSnapshot();
 });
 

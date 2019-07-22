@@ -2,6 +2,46 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.2.9] - 2019-07-22
+### Fixed
+- Move from null to undefined
+
+## [3.2.8] - 2019-05-24
+### Fixed
+- Published dist
+
+## [3.2.7] - 2019-05-24
+### Fixed
+- Fetch config stops dispatching user logged in, user logged out
+
+## [3.2.6] - 2019-04-03
+### Fixed
+- Focus listener
+
+## [3.2.5] - 2019-04-03
+### Fixed
+- Focus listener
+
+## [3.2.4] - 2019-04-03
+### Fixed
+- Focus listener
+
+## [3.2.3] - 2019-04-03
+### Fixed
+- Focus listener
+
+## [3.2.2] - 2019-04-03
+### Fixed
+- Focus listener
+
+## [3.2.1] - 2019-03-30
+### Fixed
+- Focus listener
+
+## [3.2.0] - 2019-03-30
+### Added
+- Focus listener
+
 ## [3.1.11] - 2019-03-21
 ### Fixed
 - Site loader

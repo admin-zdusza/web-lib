@@ -1,12 +1,15 @@
 import {FETCH_CONFIG} from './types';
 import {unexpectedErrorOccured} from '../components/ws-unexpected-error/actions-creators';
 
-const fetchConfig = () => (dispatch: Function) => {
+const fetchConfig = (focusListener: any) => (dispatch: Function) => {
     dispatch(fetchConfigRequest());
     return fetch('/page/initialdata')
         .then(response => {
             if (response.status === 200) {
-                return response.json().then(data => dispatch(fetchConfigSuccess(data)));
+                return response.json().then(data => {
+                    dispatch(fetchConfigSuccess(data));
+                    window.addEventListener('focus', focusListener);
+                });
             } else {
                 dispatch(fetchConfigFailure());
                 dispatch(unexpectedErrorOccured());

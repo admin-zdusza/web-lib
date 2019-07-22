@@ -28,7 +28,7 @@ export class WsUnexpectedError extends Component<WsUnexpectedErrorProps> {
                     <Button variant='secondary' onClick={() => {
                         this.props.dispatch(unexpectedErrorAcknowledged())
                     }}>Ok</Button>
-                </Modal.Footer>) : null}
+                </Modal.Footer>) : undefined}
         </Modal>)
     }
 }
