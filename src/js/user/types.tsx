@@ -4,8 +4,8 @@ export enum USER {
 }
 
 export interface User {
-    sessionToken: string,
-    loginToken: string,
+    token: string,
+    sessionDuration: number,
     email: string,
     paidTill: Date | undefined,
     role: string | undefined

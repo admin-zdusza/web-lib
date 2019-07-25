@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.2.12] - 2019-07-25
+### Fixed
+- User properties
+
 ## [3.2.11] - 2019-07-22
 ### Fixed
 - Handling fetch config
