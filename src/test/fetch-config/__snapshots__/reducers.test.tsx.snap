@@ -16,9 +16,7 @@ Object {
 
 exports[`should reduce fetch config success 1`] = `
 Object {
-  "data": Object {
-    "accountsUrl": "dummyAccountsUrl",
-  },
+  "data": Object {},
   "isLoading": false,
 }
 `;

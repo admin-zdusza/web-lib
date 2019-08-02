@@ -1,12 +1,12 @@
 import {FetchConfigAction, FetchConfigState, FETCH_CONFIG} from './types';
-import {User} from '../user/types';
+import {LoggedInUser} from '../user/types';
 
 const initialState = {
     isLoading: false,
     data: undefined,
 };
 
-export const fetchConfigReducer = <T extends { user: User }>(
+export const fetchConfigReducer = <T extends { user: LoggedInUser }>(
     state: FetchConfigState<T> = initialState,
     action: FetchConfigAction<T>): FetchConfigState<T> => {
     switch (action.type) {

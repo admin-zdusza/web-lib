@@ -1,20 +1,25 @@
 import React, {Component} from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-import {unexpectedErrorAcknowledged} from "./actions-creators";
+import {unexpectedErrorAcknowledged} from './actions-creators';
 
 interface WsUnexpectedErrorProps {
     dispatch: Function;
     closable: boolean
 }
+ 
+const onHide = (closable: boolean, dispatch: Function) => () => {
+    if (closable) {
+        dispatch(unexpectedErrorAcknowledged());
+    }
+};
 
-export class WsUnexpectedError extends Component<WsUnexpectedErrorProps> {
+const onClick = (dispatch: Function) => () => 
+    dispatch(unexpectedErrorAcknowledged());
+
+class WsUnexpectedError extends Component<WsUnexpectedErrorProps> {
     render() {
-        return (<Modal show={true} onHide={() => {
-            if (this.props.closable) {
-                this.props.dispatch(unexpectedErrorAcknowledged());
-            }
-        }}>
+        return (<Modal show={true} onHide={onHide(this.props.closable, this.props.dispatch)}>
             <Modal.Header closeButton={this.props.closable}>
                 <Modal.Title className='text-danger'>Nastąpił nieoczekiwany błąd.</Modal.Title>
             </Modal.Header>
@@ -25,10 +30,14 @@ export class WsUnexpectedError extends Component<WsUnexpectedErrorProps> {
 
             {this.props.closable ?
                 (<Modal.Footer>
-                    <Button variant='secondary' onClick={() => {
-                        this.props.dispatch(unexpectedErrorAcknowledged())
-                    }}>Ok</Button>
+                    <Button variant='secondary' onClick={onClick(this.props.dispatch)}>Ok</Button>
                 </Modal.Footer>) : null}
         </Modal>)
     }
+}
+
+export {
+    WsUnexpectedError,
+    onClick,
+    onHide
 }

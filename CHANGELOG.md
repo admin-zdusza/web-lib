@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.0.1] - 2019-08-02
+### Fixed
+- Tests
+
+## [4.0.0] - 2019-07-30
+### Fixed
+- User properties
+
 ## [3.2.12] - 2019-07-25
 ### Fixed
 - User properties

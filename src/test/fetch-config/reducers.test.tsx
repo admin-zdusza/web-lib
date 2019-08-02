@@ -8,7 +8,16 @@ it('should reduce fetch config request', () => {
 it('should reduce fetch config success', () => {
     expect(fetchConfigReducer(undefined, {
         type: FETCH_CONFIG.SUCCESS,
-        data: {accountsUrl: 'dummyAccountsUrl'}
+        data: {
+            user: {
+                email: 'test',
+                token: 'test',
+                sessionDuration: 1,
+                sessionStamp: 'stamp',
+                paidTill: undefined,
+                role: undefined
+            }
+        }
     })).toMatchSnapshot();
 });
 
