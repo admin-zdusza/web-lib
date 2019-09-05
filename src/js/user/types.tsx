@@ -4,5 +4,5 @@ export interface LoggedInUser {
     sessionStamp: string,
     email: string,
     paidTill: Date | undefined,
-    role: string | undefined
+    roles: Record<string, string>
 }

@@ -1,6 +1,6 @@
 {
   "name": "web-lib-zdusza",
-  "version": "4.0.1",
+  "version": "5.0.0",
   "description": "Web library",
   "license": "MIT",
   "main": "dist/index.js",

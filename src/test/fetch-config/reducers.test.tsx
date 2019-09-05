@@ -15,7 +15,7 @@ it('should reduce fetch config success', () => {
                 sessionDuration: 1,
                 sessionStamp: 'stamp',
                 paidTill: undefined,
-                role: undefined
+                roles: {}
             }
         }
     })).toMatchSnapshot();
