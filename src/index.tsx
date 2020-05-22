@@ -5,4 +5,8 @@ export {WsBrand} from './js/components/ws-brand/WsBrand';
 export {unexpectedErrorOccured,}from './js/components/ws-unexpected-error/actions-creators';
 export {unexpectedErrorReducer} from './js/components/ws-unexpected-error/reducers';
 export {WsUnexpectedError} from './js/components/ws-unexpected-error/WsUnexpectedError';
+export {timeoutOccured,}from './js/components/ws-timeout-error/actions-creators';
+export {timeoutReducer} from './js/components/ws-timeout-error/reducers';
+export {WsTimeoutError} from './js/components/ws-timeout-error/WsTimeoutError';
 export {WsSiteLoader} from './js/components/ws-site-loader/WsSiteLoader';
+export {fetchWithTimeout} from './js/fetch-with-timeout';

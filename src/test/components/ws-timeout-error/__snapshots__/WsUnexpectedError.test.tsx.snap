@@ -4,7 +4,7 @@ exports[`should dispatch on click 1`] = `
 Array [
   Array [
     Object {
-      "type": "UNEXPECTED_ERROR_ACKNOWLEDGED",
+      "type": "TIMEOUT_ACKNOWLEDGED",
     },
   ],
 ]
@@ -14,7 +14,7 @@ exports[`should dispatch on hide 1`] = `
 Array [
   Array [
     Object {
-      "type": "UNEXPECTED_ERROR_ACKNOWLEDGED",
+      "type": "TIMEOUT_ACKNOWLEDGED",
     },
   ],
 ]
@@ -31,16 +31,16 @@ exports[`should render closeable 1`] = `
     closeButton={true}
   >
     <UNDEFINED
-      className="text-danger"
+      className="text-warning"
     >
-      Nastąpił nieoczekiwany błąd.
+      Wolne połączenie internetowe.
     </UNDEFINED>
   </UNDEFINED>
   <UNDEFINED
-    className="text-danger"
+    className="text-warning"
   >
     <p>
-      Proszę spróbować jeszcze raz.
+      Proszę sprawdzić połączenie z internetem i spróbować jeszcze raz.
     </p>
   </UNDEFINED>
   <UNDEFINED>
@@ -63,16 +63,16 @@ exports[`should render not closeable 1`] = `
     closeButton={false}
   >
     <UNDEFINED
-      className="text-danger"
+      className="text-warning"
     >
-      Nastąpił nieoczekiwany błąd.
+      Wolne połączenie internetowe.
     </UNDEFINED>
   </UNDEFINED>
   <UNDEFINED
-    className="text-danger"
+    className="text-warning"
   >
     <p>
-      Proszę spróbować jeszcze raz.
+      Proszę sprawdzić połączenie z internetem i spróbować jeszcze raz.
     </p>
   </UNDEFINED>
 </UNDEFINED>
