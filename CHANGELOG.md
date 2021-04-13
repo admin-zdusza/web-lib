@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [7.0.2] - 2021-04-13
+### Added 
+- tests and eslint and prettier
+
 ## [7.0.1] - 2021-04-13
 ### Added 
 - unexpected error
