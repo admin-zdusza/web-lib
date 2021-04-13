@@ -1,10 +1,15 @@
 {
-  "name": "@dennisko/tutorial",
-  "version": "1.0.1",
-  "main": "lib/index.js",
-  "module": "lib/index.esm.js",
+  "name": "web-lib-zdusza",
+  "version": "7.0.0",
+  "private": false,
+  "engines": {
+    "node": "14.16.1",
+    "npm": "7.9.0"
+  },
+  "main": "build/index.js",
+  "module": "build/index.esm.js",
   "files": [
-    "lib"
+    "build"
   ],
   "devDependencies": {
     "@babel/core": "^7.13.15",
