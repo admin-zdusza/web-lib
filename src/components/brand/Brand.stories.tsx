@@ -1,25 +1,25 @@
-import * as React from 'react';
-import { Meta, Story } from '@storybook/react/types-6-0';
+import * as React from "react";
+import { Meta, Story } from "@storybook/react/types-6-0";
 import { Brand, BrandProps } from "./Brand";
 
 export default {
-  title: 'Brand',
+  title: "Brand",
   component: Brand,
   description: `A brand!`,
   argTypes: {
-    appName: {control: 'string'},
+    appName: { control: "string" },
   },
 } as Meta;
 
-const Template: Story<BrandProps> = (args) => <Brand {...args}/>;
+const Template: Story<BrandProps> = (args) => <Brand {...args} />;
 
 export const Default = Template.bind({});
 Default.parameters = {
-  viewMode: 'canvas',
+  viewMode: "canvas",
   docs: {
-    page: null
-  }
+    page: null,
+  },
 };
 Default.args = {
-  appName: 'Monitoring',
+  appName: "Monitoring",
 };

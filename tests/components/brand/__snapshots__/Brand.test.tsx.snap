@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render brand 1`] = `
+<DocumentFragment>
+  <h2>
+    Monitoring
+    <small
+      class="d-none d-md-inline"
+      style="color: rgb(119, 119, 119);"
+    >
+       - z duszą!
+    </small>
+  </h2>
+</DocumentFragment>
+`;

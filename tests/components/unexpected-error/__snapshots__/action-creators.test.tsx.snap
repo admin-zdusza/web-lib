@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should create unexpected error acknowledged 1`] = `
+Object {
+  "type": "UNEXPECTED_ERROR_ACKNOWLEDGED",
+}
+`;
+
+exports[`should create unexpected error occured 1`] = `
+Object {
+  "type": "UNEXPECTED_ERROR_OCCURED",
+}
+`;

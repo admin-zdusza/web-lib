@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should create timeout error acknowledged 1`] = `
+Object {
+  "type": "TIMEOUT_ACKNOWLEDGED",
+}
+`;
+
+exports[`should create timeout error occured 1`] = `
+Object {
+  "type": "TIMEOUT_OCCURED",
+}
+`;

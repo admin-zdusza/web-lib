@@ -45,4 +45,3 @@ export class UnexpectedError extends Component<UnexpectedErrorProps> {
     );
   }
 }
-

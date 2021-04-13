@@ -7,7 +7,7 @@ export interface BrandProps {
 export class Brand extends Component<BrandProps> {
   render() {
     const style = {
-      color: '#777'
+      color: "#777",
     };
     return (
       <h2>
@@ -20,4 +20,3 @@ export class Brand extends Component<BrandProps> {
     );
   }
 }
-

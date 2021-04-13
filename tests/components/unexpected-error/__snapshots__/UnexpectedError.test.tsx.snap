@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render timeout error closable 1`] = `<DocumentFragment />`;
+
+exports[`should render timeout error non closable 1`] = `<DocumentFragment />`;

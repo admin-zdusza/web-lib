@@ -2,3 +2,4 @@ node_modules
 build
 .eslintcache
 storybook-static
+coverage
