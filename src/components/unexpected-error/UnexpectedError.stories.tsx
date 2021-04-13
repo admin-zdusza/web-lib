@@ -1,15 +1,15 @@
 import * as React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
-import { TimeoutError, TimeoutErrorProps } from './TimeoutError';
+import { UnexpectedError, UnexpectedErrorProps } from './UnexpectedError';
 
 export default {
-  title: 'TimeoutError',
-  component: TimeoutError,
-  description: `A timeout error!`,
+  title: 'UnexpectedError',
+  component: UnexpectedError,
+  description: `An unexpected error!`,
   argTypes: {},
 } as Meta;
 
-const Template: Story<TimeoutErrorProps> = (args) => <TimeoutError {...args}/>;
+const Template: Story<UnexpectedErrorProps> = (args) => <UnexpectedError {...args}/>;
 
 export const Closable = Template.bind({});
 Closable.parameters = {
