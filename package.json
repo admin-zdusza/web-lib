@@ -1,6 +1,6 @@
 {
   "name": "web-lib-zdusza",
-  "version": "7.0.1",
+  "version": "7.0.2",
   "private": false,
   "engines": {
     "node": "14.16.1",
@@ -77,8 +77,7 @@
       "react",
       "@typescript-eslint"
     ],
-    "rules": {
-    }
+    "rules": {}
   },
   "jest": {
     "preset": "ts-jest",
