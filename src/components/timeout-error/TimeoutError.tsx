@@ -3,7 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import { timeoutAcknowledged } from "./actions-creators";
 
-export interface WsTimeoutErrorProps {
+export interface TimeoutErrorProps {
   dispatch: Function;
   closable: boolean;
 }
@@ -16,7 +16,7 @@ const onHide = (closable: boolean, dispatch: Function) => () => {
 
 const onClick = (dispatch: Function) => () => dispatch(timeoutAcknowledged());
 
-export class WsTimeoutError extends Component<WsTimeoutErrorProps> {
+export class TimeoutError extends Component<TimeoutErrorProps> {
   render() {
     return (
       <Modal

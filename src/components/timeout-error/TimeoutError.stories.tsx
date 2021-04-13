@@ -1,15 +1,15 @@
 import * as React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
-import { WsTimeoutError, WsTimeoutErrorProps } from './WsTimeoutError';
+import { TimeoutError, TimeoutErrorProps } from './TimeoutError';
 
 export default {
   title: 'ClosableTimeoutError',
-  component: WsTimeoutError,
+  component: TimeoutError,
   description: `A timeout error!`,
   argTypes: {},
 } as Meta;
 
-const Template: Story<WsTimeoutErrorProps> = (args) => <WsTimeoutError {...args}/>;
+const Template: Story<TimeoutErrorProps> = (args) => <TimeoutError {...args}/>;
 
 export const Closable = Template.bind({});
 Closable.parameters = {
